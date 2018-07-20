@@ -20,9 +20,14 @@ class FAADataHelper {
         let request_options = this.getdbcityStatus(dbcity);
  
         let response = request(request_options, function (error, response, body) {
+ 	    if (console.error == !'null'){
             console.log('error:', error); // Print the error if one occurred
-            console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
+	    console.log('statusCode:', response && response.statusCode);
+	    }
+            else {
+	    console.log('statusCode:', response && response.statusCode);
             console.log('body:', body); // Print the HTML for the Google homepage.
+	    }
         });
  
         return response.body;
