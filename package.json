@@ -1,0 +1,28 @@
+{
+  "name": "faa-info",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bignerdranch/alexa-airportinfo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bignerdranch/alexa-airportinfo/issues"
+  },
+  "homepage": "https://github.com/bignerdranch/alexa-airportinfo#readme",
+  "dependencies": {
+    "alexa-app": "^4.2.2",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "lodash": "^4.17.10",
+    "mocha": "^5.2.0",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2"
+  }
+}
