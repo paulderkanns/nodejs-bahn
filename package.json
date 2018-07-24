@@ -1,7 +1,7 @@
 {
-  "name": "faa-info",
+  "name": "nodejsbahn",
   "version": "1.0.0",
-  "description": "",
+  "description": "1. original idea from: https://www.bignerdranch.com/blog/developing-alexa-skills-locally-with-nodejs-setting-up-your-local-environment/ 2. original repo: https://github.com/bignerdranch/alexa-airportinfo 3. uses API which is only returning 500 http://services.faa.gov/docs/services/airport/#airportStatus which is not long in use",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/bignerdranch/alexa-airportinfo.git"
   },
-  "author": "",
+  "author": "paul",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/bignerdranch/alexa-airportinfo/issues"
@@ -20,9 +20,19 @@
     "alexa-app": "^4.2.2",
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",
+    "express": "^4.16.3",
     "lodash": "^4.17.10",
     "mocha": "^5.2.0",
     "request": "^2.87.0",
     "request-promise": "^4.2.2"
-  }
+  },
+  "directories": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "keywords": [
+    "bahn"
+  ]
 }
